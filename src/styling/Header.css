@@ -1,0 +1,107 @@
+.desktopPage {
+  height: 100vh;
+  width: 100vw;
+}
+.headerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  transition: padding-top 0.2s ease;
+}
+.headerContainer.-open {
+  padding-top: 50px;
+}
+.logoBox {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.logo {
+  max-width: 100%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 36px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.svg {
+  stroke: #fff;
+  transition: 0.2s;
+}
+
+.svg.-menu-open {
+  stroke: #fff;
+}
+
+.gfirst-child {
+  opacity: 1;
+  transition: opacity 0s 0.2s;
+}
+
+.gfirst-child.-menu-open {
+  opacity: 0;
+}
+
+.line {
+  transition: transform 0.2s 0.2s;
+  transform: translateY(0px);
+}
+
+.glast-child {
+  opacity: 0;
+  transition: opacity 0s 0.2s;
+}
+
+.glast-child.-menu-open {
+  opacity: 1;
+}
+
+.gfirst-childlinefirst-child.-menu-open {
+  transition: transform 0.2s;
+  transform: translateY(7px);
+}
+
+.gfirst-childlinelast-child.-menu-open {
+  transition: transform 0.2s;
+  transform: translateY(-7px);
+}
+.glast-childlinefirst-child.-menu-open {
+  transition: transform 0.2s 0.2s;
+  transform: rotate(45deg) translateY(-18px) translateX(10px);
+}
+
+.glast-childlinelast-child.-menu-open {
+  transition: transform 0.2s 0.2s;
+  transform: rotate(-45deg) translateY(10px) translateX(-30px);
+}
+.menu {
+  height: 100%;
+  opacity: 0;
+  color: #fff;
+  background: #000;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.menu.-open {
+  opacity: 0.9;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 20px 0;
+}
