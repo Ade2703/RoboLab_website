@@ -171,10 +171,10 @@ function Header() {
           <nav className={`menu ${isMenuOpen ? "-open" : ""}`}>
             <ul>
               <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                Projects
+                About
               </li>
               <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                About
+                Projects
               </li>
               <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 Contacts
