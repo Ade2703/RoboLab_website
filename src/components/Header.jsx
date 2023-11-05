@@ -42,6 +42,13 @@ function Header() {
       y: mousePosition.y - 30,
       mixBlendMode: "difference",
     },
+    logo: {
+      height: 100,
+      width: 100,
+      x: mousePosition.x - 50,
+      y: mousePosition.y - 50,
+      mixBlendMode: "difference",
+    },
     hidden: {
       height: 0,
       width: 0,
@@ -58,6 +65,11 @@ function Header() {
   const textEnter = () => {
     if (isMenuOpen === true) {
       setCursorVariant("text");
+    }
+  };
+  const logoEnter = () => {
+    if (isMenuOpen === true) {
+      setCursorVariant("logo");
     }
   };
   const textLeave = () => {
@@ -80,7 +92,7 @@ function Header() {
           }}
         >
           <Box
-            onMouseEnter={textEnter}
+            onMouseEnter={logoEnter}
             onMouseLeave={textLeave}
             className={`logoBox ${isMenuOpen ? "-open" : ""}`}
             sx={{ width: { xs: 120, md: 184 } }}
