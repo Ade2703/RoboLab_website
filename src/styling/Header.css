@@ -1,3 +1,7 @@
+*.-open{
+  cursor: none;
+}
+
 .desktopPage {
   height: 100vh;
   width: 100vw;
@@ -13,6 +17,7 @@
 }
 .headerContainer.-open {
   padding-top: 50px;
+  cursor: none;
 }
 .logoBox {
   padding-left: 15px;
@@ -30,6 +35,10 @@
   cursor: pointer;
   z-index: 2;
 }
+.button.-menu-open{
+  cursor: none;
+}
+
 
 .svg {
   stroke: #fff;
@@ -91,10 +100,13 @@
   align-items: center;
   justify-content: center;
   font-size: 36px;
+  z-index: -1;
 }
 
 .menu.-open {
   opacity: 0.9;
+  cursor: none;
+  z-index: 1;
 }
 
 .menu ul {
@@ -104,4 +116,18 @@
 
 .menu li {
   margin: 20px 0;
+}
+
+
+.cursor{
+  background-color: #ffca18;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.cursor.-open{
+  z-index: 5;
 }
