@@ -3,10 +3,12 @@
 }
 
 .desktopPage {
-  height: 100vh;
+  height: 0px;;
   width: 100vw;
 }
 .headerContainer {
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -14,6 +16,7 @@
   justify-content: space-between;
   background-color: black;
   transition: padding-top 0.2s ease;
+  z-index: 1000;
 }
 .headerContainer.-open {
   padding-top: 50px;
@@ -33,7 +36,7 @@
   box-sizing: border-box;
   height: 36px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 902;
 }
 .button.-menu-open{
   cursor: none;
@@ -91,7 +94,10 @@
   transform: rotate(-45deg) translateY(10px) translateX(-30px);
 }
 .menu {
+  position: fixed;
+  top: 0;
   height: 100%;
+  width: 100%;
   opacity: 0;
   color: #fff;
   background: #000;
@@ -106,7 +112,7 @@
 .menu.-open {
   opacity: 0.9;
   cursor: none;
-  z-index: 1;
+  z-index: 900;
 }
 
 .menu ul {
@@ -125,9 +131,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 900;
   pointer-events: none;
 }
 .cursor.-open{
-  z-index: 5;
+  z-index: 1005;
 }

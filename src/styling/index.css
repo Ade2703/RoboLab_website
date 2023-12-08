@@ -1,0 +1,11 @@
+/* Hide scrollbar for the entire page */
+body {
+  overflow: auto; /* Enable scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+/* Hide scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+body::-webkit-scrollbar {
+  display: none;
+}

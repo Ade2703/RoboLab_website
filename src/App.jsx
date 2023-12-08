@@ -4,7 +4,7 @@ import './styling/App.css'
 function App() {
   return (
     <>
-      <HomePage/>
+      <HomePage className="app"></HomePage>
     </>
   );
 }
