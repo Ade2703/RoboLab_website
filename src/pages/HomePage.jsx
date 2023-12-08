@@ -13,12 +13,6 @@ function HomePage() {
       </Box>
       <Box
         className="contentContainer"
-        sx={{
-          pt: {
-            xs: 55.25,
-            md: 82.39,
-          },
-        }}
       >
         <HomePageContent />
       </Box>

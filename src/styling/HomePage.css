@@ -1,7 +1,9 @@
 .contentContainer {
   position: relative;
   width: 100%;
-  overflow: hidden; /* Hide overflow from scrollable content */
+  height: auto;
+  padding-top: 120px;
+  z-index: 1;
 }
 
 .backgroundContainer {
