@@ -21,7 +21,7 @@ function HomePageContent() {
             }
         }}>
           <HomePageOpener />
-          <Box className="viewportContainer"></Box>
+          <Box className="viewportContainer" id="section1"></Box>
         </Box>
       </Box>
     </>
