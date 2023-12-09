@@ -58,8 +58,10 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
     if (isMenuOpen === true) {
       setCursorVariant("hidden");
+      document.body.classList.remove('no-scroll');
     } else {
       setCursorVariant("default");
+      document.body.classList.add('no-scroll');
     }
   };
   const textEnter = () => {

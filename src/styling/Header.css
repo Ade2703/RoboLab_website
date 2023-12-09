@@ -2,6 +2,10 @@
   cursor: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .desktopPage {
   height: 0px;;
   width: 100vw;

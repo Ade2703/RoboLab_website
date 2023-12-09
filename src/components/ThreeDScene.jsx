@@ -15,7 +15,6 @@ const CustomModel = () => {
     modelRef.current.scale.set(0.5, 0.5, 0.5); // Set scale
   }
   // Animation logic that moves the model along the x-axis based on scroll position
-  
   useFrame(() => {
     const scrollY = window.scrollY;
     if (modelRef.current) {
